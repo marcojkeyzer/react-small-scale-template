@@ -12,7 +12,7 @@ jobs {}
 record_apis: [{
   name: "categories"
   table_name: "categories"
-  acl_authenticated: [CREATE, READ, DELETE]
+  acl_authenticated: [CREATE, READ]
 }, {
   name: "products"
   table_name: "products"
@@ -20,7 +20,7 @@ record_apis: [{
 }, {
   name: "profiles"
   table_name: "profiles"
-  acl_authenticated: [READ, CREATE, UPDATE, DELETE, SCHEMA]
+  acl_authenticated: [READ, CREATE, UPDATE, SCHEMA]
 }, {
   name: "Users"
   table_name: "Users"
