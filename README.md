@@ -1,0 +1,1 @@
+# react-small-scale-template
