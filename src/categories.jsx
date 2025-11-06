@@ -1,12 +1,12 @@
-import { Create, DataTable, Edit, List, SimpleForm, TextInput } from "react-admin";
+import { Create, Datagrid, Edit, List, SimpleForm, TextField, TextInput } from "react-admin";
 
-export const CategoryList = () => (
+export const CategoriesList = () => (
     <List>
-        <DataTable>
-            <DataTable.Col source="created_at" />
-            <DataTable.Col source="id" />
-            <DataTable.Col source="name" />
-        </DataTable>
+        <Datagrid>
+            <TextField source="name" />
+            <TextField source="id" />
+            <TextField source="created_at" />
+        </Datagrid>
     </List>
 );
 
