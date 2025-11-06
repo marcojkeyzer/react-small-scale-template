@@ -1,4 +1,4 @@
-import { Create, Datagrid, DataTable, DateField, Edit, EditButton, List, NumberField, ReferenceField, ReferenceInput, ShowButton, SimpleForm, TextField, TextInput } from "react-admin";
+import { Create, Datagrid, Edit, EditButton, List, NumberField, ReferenceField, ReferenceInput, Show, ShowButton, SimpleForm, SimpleShowLayout, TextField, TextInput } from "react-admin";
 
 export const ProductList = () => (
     <List>
@@ -15,6 +15,21 @@ export const ProductList = () => (
             <ShowButton />            
         </Datagrid>
     </List>
+);
+
+export const ProductShow = () => (
+    <Show>
+        <SimpleShowLayout>
+            <TextField source="name" />
+            <TextField source="description" />
+            <ReferenceField source="category_id" reference="categories">    
+                <TextField source="name" />
+            </ReferenceField>
+            <NumberField source="price"/>
+            <TextField source="id" />
+            <TextField source="created_at" />          
+        </SimpleShowLayout>
+    </Show>
 );
 
 export const ProductCreate = () => (

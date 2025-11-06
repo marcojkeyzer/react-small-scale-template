@@ -17,4 +17,12 @@ record_apis: [{
   name: "products"
   table_name: "products"
   acl_authenticated: [CREATE, READ, UPDATE, DELETE]
+}, {
+  name: "profiles"
+  table_name: "profiles"
+  acl_authenticated: [READ, CREATE, UPDATE, DELETE, SCHEMA]
+}, {
+  name: "Users"
+  table_name: "Users"
+  acl_authenticated: [READ, SCHEMA]
 }]
