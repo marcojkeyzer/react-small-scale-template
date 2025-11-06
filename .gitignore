@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+traildepot/data/
+traildepot/secrets/
+traildepot/uploads/
+traildepot/backups/
+traildepot/wasm/
